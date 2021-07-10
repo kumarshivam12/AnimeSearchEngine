@@ -1,6 +1,9 @@
-from app import application
+import json
+import requests
+
 from flask import render_template, request, redirect
-import json, requests
+
+from app import application
 
 
 @application.route("/", methods=["GET", "POST"])
